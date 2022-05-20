@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Car catalogue</title>
+    <script src="app.js" charset="utf-8"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+    <style>
+      *{
+       margin: 0;
+       overflowx: hidden;
+      }
+      .table-vh{
+        background: green;
+        max-height: 300vh;
+        min-width: 100%;
+      }
+      .table-vh img{
+        height: 350px;
+        width: 350px;
+        object fit: cover;
+        cursor: pointer;
+      }
+      table{
+        background: black;
+        color: white;
+        float: left;
+        width: 80%;
+        margin: 0 auto;
+        border-collapse: collapse;
+        min-height: 100vh;
+        opacity: 0.9;
+      }
+      .table-vh .heading{
+        position: relative;
+        opacity: 1;
+        float: left;
+        width: 20%;
+        min-height: 383vh;
+        background: black;
+        color: white;
+        text-align: center;
+        margin-bottom: 20px;
+      }
+      .table-vh .heading h1{
+        position: fixed;
+      }
+      h2{
+        text-align: center;
+        color: yellow;
+        background: transparent;
+        position: fixed;
+        top: 20%;
+      }
+      th{
+        font-size: 30px;
+      }
+      td{
+        font-size: 25px;
+      }
+      button{
+        color: black;
+        font-size: 10px;
+        background: magenta;
+      }
+      .list-item{
+        position: fixed;
+        top: 30%;
+        color: black;
+        float: left;
+        height: 50vh;
+        width: 17%;
+        background: magenta;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="table-vh">
+      <div class="heading">
+          <h1>The following is our <br>catalogue.Feel free to <br>consult us on anything</h1>
+          <div class="list-item">
+            <p style="font-size: 20px; background: orange;"> Types of
+              vehicles in our stock</p>
+             <br>
+             <ol>
+               <li style="background: blue; color: white;">TRUCKS</li>
+               <ul>
+                 <li>Suzuki</li>
+                 <li>Isuzu</li>
+                 <li>Toyota</li>
+               </ul>
+               <li style="background: blue; color: white;">SMALL CARS</li>
+               <ul>
+                 <li>Mazda</li>
+                 <li>Toyota</li>
+                 <li>Isuzu</li>
+                 <li>Benz</li>
+               </ul>
+             </ol>
+          </div>
+      </div>
+      <h2><a href="index.html" style="text-decoration: none; cursor: pointer;">
+        GO BACK TO HOME PAGE</a></h2>
+      <table border="1" cellpadding="80" cellspacing="20" target="_blank">
+        <tr>
+          <th>Car ID</th>
+          <th>Car Name</th>
+          <th>Car Image</th>
+          <th>Car Status</th>
+        </tr>
+        <tr>
+          <td>123</td>
+          <td>Volvo</td>
+          <td><button type="submit" onclick="click()" id="image"><img src="images/image-5.jpg">Click to view</button></td>
+          <td>New</td>
+        </tr>
+        <tr>
+          <td>128</td>
+          <td>Mazda</td>
+          <td><button type="submit" onclick="click()" id="image"><img src="images/image-3.jpg">Click to view</button></td>
+          <td>New</td>
+        </tr>
+        <tr>
+          <td>136</td>
+          <td>Benx</td>
+          <td><button type="submit" onclick="click()" id="image"><img src="images/image-2.jpg">Click to view</button></td>
+          <td>New</td>
+        </tr>
+        <tr>
+          <td>153</td>
+          <td>Mercedes</td>
+          <td><button type="submit" onclick="click()" id="image"><img src="images/image-6.jpg">Click to view</button></td>
+          <td>New</td>
+        </tr>
+        <tr>
+          <td>183</td>
+          <td>VoxWs</td>
+          <td><button type="submit" onclick="click()" id="image"><img src="images/image-1.jpg">Click to view</button></td>
+          <td>New</td>
+        </tr>
+      </table>
+    </div>
+    <script type="text/javascript">
+      function click(){
+         var click = document.getElementById('image');
+         click.style.height = '100';
+      }
+    </script>
+  </body>
+</html>

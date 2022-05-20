@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+    <title></title>
+  </head>
+  <body>
+    <div class="home" id="home">
+      <div class="nav-bar">
+        <a href="#"><img class="logo" src="images/image-1.jpg" ><span>CAR SALES</span></a>
+        <ul id="ul">
+          <li><i class="fa fa-home" id="active"></i><a href="#home">Home</a></li>
+          <li><i class="fa fa-user"></i><a href="#about">About us</a>
+            <div class="images">
+              <ul id="image-link">
+                <li><a href="images.html" id="ShowImages">Images</li>
+              </ul>
+            </div>
+          </li>
+          <li><i class="fa fa-chevron-circle-down"></i><a href="#Services">Services</a>
+            <div class="pricing">
+              <ul><li><i class="fa fa-inr"></i><a href="pricing.html">Pricing</a></li></ul>
+            </div>
+          </li>
+          <li><i class="fa fa-phone"></i><a href="#contacts">Contact</a></li>
+          <li><i class="fa fa-picture-o"></i><a href="#Test">Testimonials</a></li>
+        </ul>
+          <div class="burger" onclick="Show()">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+          </div>
+      </div>
+      <div class="home-content">
+        <p id="p1">Vermin</p>
+        <p id="p1">Motor Company</p>
+        <p>Dealers in motor vehicle accessories.<br>Services done to satisfaction.<br>Our clients always come back and bring more
+        Feel free to be part of the community</p>
+      </div>
+    </div>
+    <div class="about" id="about">
+      <h1>About us</h1>
+      <p>In the year 2008, we started a motor Company directed to serving the community
+      <br>by offering quality Services.We are located in Westland, a serene environment <br>
+    with quality roads.Vermin Motor Company is owned by 4 shareholders who <br>
+  spend sleepless nights making sure that products sold are legit and upto todays
+  <br> Standards.Next year we will be launnching a new project meant to include members <br>
+  in saving and taking loans.You cant miss this opportunity.</p>
+  <div class="image-work">
+    <img src="images/image-8.jpg" alt="" id="img8">
+    <img src="images/image-10.jpg" alt="" id="img10">
+    <img src="images/image-7.jpg" alt="" id="img7">
+  </div>
+    </div>
+    <div class="Services" id="Services">
+      <h1>Services</h1>
+      <div class="repair">
+        <div class="one">
+          <img src="images/image-9.jpg" alt="">
+          <p>Despite selling, we do repair of motor vehicles professionally.<br>
+          We have qualified and experienced Engineers who satisifactory do this job. <br>
+        ----if not in Vermin, where else</p>
+        </div>
+        <br><br>
+      <div class="two">
+        <img src="images/image-4.jpg" alt="">
+        <p>Driving lessons are conducted for newbies in the industry and some <br>
+        workshops taught to the interested parties.We not only serve you, but also
+      <br> equip you with the necessary lessons required for you to fit the world</p>
+      </div>
+      </div>
+      <div class="sales">
+        <img src="images/image-2.jpg" alt="" style="background-position: bottom;">
+        <a href="catalogue.html" id="catalogue">Check the latest stock <br>
+        and their correspoding prices</a>
+      </div>
+    </div>
+    <div class="contacts" id="contacts">
+      <h1>Contact us</h1>
+      <div class="login">
+      <form action="index.php" method="post">
+      <input type="text" name="firstname" value="" placeholder="First Name">
+      <br><br>
+      <input type="text" name="secondname" value="" placeholder="Second Name"><br><br>
+      <input type="email" name="email" value="" placeholder="Email"><br><br>
+      <textarea name="name" rows="8" cols="50" placeholder="Tell us your feedback"></textarea><br><br>
+      <button type="submit" name="button"><span></span>Send message</button>
+      </div>
+      </form>
+      <div class="Testimonials" id="Testimonials">
+        <h1 style="background: transparent; font-size: 20px; ">This is what our clients have to say about us.We value your feedback <br>
+        on our services.Thankyou!</h1>
+      </div>
+    </div>
+    <div class="footer">
+       <h1>Find us through our social media accounts</h1>
+       <p>Email us <a href="kakirufus06@gmail.com" target="_blank">verminmotorvehicle@gmail.com</a></p>
+       <a href="rufus_kaki"><i class="fa fa-facebook"></i></a>
+       <a href="#"><i class="fa fa-twitter"></i></a>
+       <a href="#"><i class="fa fa-instagram"></i></a>
+       <a href="#"><i class="fa fa-email"></i></a>
+       <p id="copyright" style="font-size: 20px;"><italic>copyright &copy; kaki</italic> </p>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
